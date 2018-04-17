@@ -1,9 +1,7 @@
 import sys, io, re
 import subprocess
-import numpy as np
 import matplotlib.pyplot as pp
 import matplotlib.animation as anim
-from mpl_toolkits.basemap import Basemap
 import requests
 import bs4
 import IPython.display
@@ -47,12 +45,12 @@ def get_img_urls(html):
 	divs = soup.find_all('div', class_='RawImageUTC')
 	img_urls = []
 	for div in divs:
-	    for child in div.children:
-	        if(child.name == 'a'):
-	            # Get only full resolution image urls
-	            if(child['href'][109] == 'F'):
-	                img_urls.append(child['href'])
-    # Sort to ensure left side image urls are first
+		for child in div.children:
+			if(child.name == 'a'):
+				# Get only full resolution image urls
+				if(child['href'][109] != 'T'):
+					img_urls.append(child['href'])
+	# Sort to ensure left side image urls are first
 	img_urls.sort()
 	return img_urls
 
