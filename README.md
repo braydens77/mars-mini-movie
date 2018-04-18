@@ -8,12 +8,13 @@ Images for all Mars solar days can be found on [NASA's Mars Science Laboratory w
 ## Set Up
 In order to get the script working, the following must be installed on your system:
 
+* requests
 * html5lib
 * bs4
 * matplotlib
 * ffmpeg
 
-`pip install html5lib bs4 matplotlib`
+`pip install requests html5lib bs4 matplotlib`
 
 ffmpeg can be downloaded [here](https://www.ffmpeg.org/). Make sure to add the path to your ffmpeg executable file in your system path.
 
