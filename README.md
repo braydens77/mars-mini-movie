@@ -11,12 +11,13 @@ In order to get the script working, the following must be installed on your syst
 * requests
 * html5lib
 * bs4
+* Pillow
 * matplotlib
 * ffmpeg
 
-`pip install requests html5lib bs4 matplotlib`
+`pip install requests html5lib bs4 Pillow matplotlib`
 
-ffmpeg can be downloaded [here](https://www.ffmpeg.org/). Make sure to add the path to your ffmpeg executable file in your system path.
+FFmpeg can be downloaded [here](https://www.ffmpeg.org/). Make sure to add the path to your ffmpeg executable file in your system path.
 
 ## Running
 Once installed, you can run the script in the terminal:
